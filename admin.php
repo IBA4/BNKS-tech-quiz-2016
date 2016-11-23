@@ -1,0 +1,44 @@
+<html>
+    <head>
+<!--styles-->
+        <link rel="stylesheet" href="theme.css">
+        <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/animate.css">
+<!--scripts-->
+        <script src="assets/jquery/jquery.min.js"></script>
+        <script src="js/engine.js"></script>
+        <script src="assets/Bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/admin.js"></script>
+<!--end-->
+   <title>MCQ for BNKS</title>
+    </head>
+    <body>
+<!--
+       ques-cl : question class
+       ans-cl : answer class
+       --more
+-->
+       <div class="msg modal text-success h1">Hello and welcome</div>
+<!--       message-->
+        <div class="container">
+        <div class="row">
+          <div id="main" class="col-sm-8 col-md-8 col-lg-8 quiz">
+          </div>
+        <div class="col-sm-4 col-md-4 col-lg-4 score">
+        <div class="main-card animated bounce">
+        Scores
+        </div>
+       </div>
+        </div>
+        </div>
+        <div class="load_button">
+          <input type="button" value="load" id="load"></input>
+        </div>
+        <div class="select_user">
+          <input type="text" id="select_user"></input>
+        </div>
+        <div class="load_send">
+          <input type="button" value="send" id="send"></input>
+        </div>
+    </body>
+</html>
