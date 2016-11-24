@@ -2,6 +2,12 @@ var user = prompt("Type the user name");
 var question_number = 0;
 
 var getContent = function(param){
+  // $(".enabled").on('click', function() {
+  //     // answer($(this).text());
+  //     alert("yeah");
+  //
+  // });
+  alert("yeah");
   $.ajax({
     type : 'post',
     url : 'client_get_content.php',
@@ -20,4 +26,6 @@ var getContent = function(param){
 }
 
 
-setInterval ('getContent()',800);
+getContent();
+
+// setInterval ('getContent()',800);
