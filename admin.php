@@ -6,10 +6,10 @@
         <link rel="stylesheet" href="assets/animate.css">
 <!--scripts-->
         <script src="assets/jquery/jquery.min.js"></script>
-        <script src="assets/Bootstrap/js/bootstrap.min.js"></script>
+<!--        <script src="assets/Bootstrap/js/bootstrap.min.js"></script>-->
         <script src="js/admin.js"></script>
 <!--end-->
-   <title>MCQ for BNKS</title>
+   <title>BNKS TechnoQuiz 2016</title>
     </head>
     <body>
 <!--
@@ -17,7 +17,6 @@
        ans-cl : answer class
        --more
 -->
-       <div class="msg modal text-success h1">Hello and welcome</div>
 <!--       message-->
         <div class="container">
             <div class="row">

@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="../timer.css"> <!-- style for timer -->
 <!--scripts-->
         <script src="../assets/jquery/jquery.min.js"></script>
-        <script src="../assets/Bootstrap/js/bootstrap.min.js"></script>
+<!--        <script src="../assets/Bootstrap/js/bootstrap.min.js"></script>-->
         <script src="../js/client.js"></script>
 <!--end-->
    <title>MCQ for BNKS</title>
