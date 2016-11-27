@@ -1,12 +1,15 @@
 /*important ones*/
 
 //----
+
+//out: theme.css, sourcemap: true, compress: true
+
 @primary:#f8c4e8;
 @grad-text:#ffffff;
 @normal-text:rgba(0, 0, 0, 0.84);
 @border:rgba(0, 0, 0, 0.35);
-body { 
-  background: url(images/bg-2.png) no-repeat center center fixed; 
+body {
+  background: url(images/bg-2.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -14,10 +17,18 @@ body {
     font-size: 20px;
     text-align: center;
 }
+div{
+  -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
 
-img{
-    max-height: 100%;
-    max-width:100%;
+img {
+  max-height: 100%;
+  max-width: 100%;
 }
 .abs-centered {
   position: relative;
@@ -25,37 +36,163 @@ img{
   margin-top: -50px;
 }
 /*---*/
-.cont{
-    width: 45%;
-    color: black;
-    left:25%;
-    right:25%;
+.cont {
+  width: 45%;
+  color: black;
+  left: 25%;
+  right: 25%;
 }
-.main-card{
-    background-color: rgba(255, 255, 255, 0.53);
-    margin:20px 20px 20px 20px;
+/* css for the top admin A--starts*/
+.connected-checker-card{
+  .ques-card;
+  background-color: rgba(140,0,120,0.96);
+  color:#ededed;
 }
-.ques-card{
-    background-color: ghostwhite;
-    color: #c14e05;
-    margin-top: 10px;
-    margin-bottom:5px;
-    padding: 8px;
-    font-size: 30px;
-    border-radius: 2px;
-    border-bottom:1px solid @border;
-    height: 100px;
+.connected-user-card{
+  .choose-card;
+  color:orange;
 }
-.answers-card{
-    margin: 10px;
+.connected-user-card:hover{
+  background-color: orange;
+  color: white;
 }
-.choose-card{
-    background-color: white;
-    color: #451a8b;
-    padding: 8px;
-    margin: 5px;
-    font-size: 20px;
-    border-radius: 5px;
-    border-bottom: 1px solid @border;
-    height:80px;
+.connected-user-card:active{
+  background-color: orange;
+  color: white;
+}
+.carry-on{
+  .load-and-send;
+  background-color: rgba(250,150,0,0.85);
+  color: white;
+}
+.carry-on:hover{
+  background-color: white;
+  color : rgba(250,150,0,0.85);
+}
+// A--ends
+
+.main-card {
+  background-color: rgba(255, 255, 255, 0.53);
+  margin: 20px 20px 20px 20px;
+}
+/*below is a very important wrapper's id*/
+.like-main-card{
+  background-color: rgba(255, 255, 255, 0.53);
+  color: white;
+}
+.ques-card {
+  background-color: ghostwhite;
+  color: #c14e05;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 8px;
+  font-size: 30px;
+  border-radius: 2px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  min-height: 100px;
+}
+.answers-card {
+  margin: 10px;
+}
+.choose-card {
+  background-color: white;
+  color: #451a8b;
+  padding: 8px;
+  margin: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  height: 80px;
+}
+.enabled:hover {
+  background-color: skyblue;
+  color: white;
+}
+.disabled{
+  background-color: rgba(230,230,230,0.8);
+  color: #0c4c69;
+}
+
+/*Below is the place for score*/
+/*--*/
+.user-card{
+  margin: 10px;
+  border-radius: 15px;
+  min-height: 70px;
+  background-color: white;
+  color: grey;
+  padding: 2px;
+}
+.user-head{
+  border-radius: 15px 15px 0px 0px;
+  font-size: 23px;
+  /*background-color: skyblue;*/
+  color:purple;
+  text-transform: bold;
+  text-transform: uppercase;
+  text-align: center;
+  overflow:hidden;
+  border-bottom: 1px dashed grey;
+}
+.user-score{
+  font-size: 30px;
+  color:green;
+  text-align: center;
+  overflow:hidden;
+  text-transform: bold;
+}
+.score{
+  padding: 10px;
+}
+/*--*/
+/*score finished*/
+
+/*Now comes the director . Its the one which selects the user that
+gets the permission to answer.*/
+.control{
+  margin: 10px;
+  padding: 5px;
+  padding-left:15px;
+  line-height: 30px;
+  background-color: rgba(255, 255, 255, 0.73);
+}
+.director{
+  padding:2px;
+  margin:0px 0px 0px 15px;
+  font-size: 20px;
+  line-height: 30px;
+  background-color: #707691;
+  color: white;
+  min-height: 40px;
+}
+
+.load-and-send{
+  margin: 10px;
+  padding:2px;
+  font-size: 25px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.53);
+}
+.load-button{
+  background-color: orange;
+  color: white;
+}
+.load-button:hover{
+  background-color: white;
+  color: orange;
+}
+.send-button{
+  background-color: teal;
+  color: white;
+}
+.send-button:hover{
+  background-color: white;
+  color: teal;
+}
+.hand-cursor{
+  cursor: pointer;
+}
+.connected-user-card-selcted{
+  background-color: orange;
+  color: white;
 }

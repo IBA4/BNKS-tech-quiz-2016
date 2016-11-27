@@ -21,24 +21,48 @@
        <div class="msg modal text-success h1">Hello and welcome</div>
 <!--       message-->
         <div class="container">
-        <div class="row">
-          <div id="main" class="col-sm-8 col-md-8 col-lg-8 quiz">
-          </div>
-        <div class="col-sm-4 col-md-4 col-lg-4 score">
-        <div class="main-card animated bounce">
-        Scores
-        </div>
-       </div>
-        </div>
-        </div>
-        <div class="load_button">
-          <input type="button" value="load" id="load"></input>
-        </div>
-        <div class="select_user">
-          <input type="text" id="select_user"></input>
-        </div>
-        <div class="load_send">
-          <input type="button" value="send" id="send"></input>
+            <div class="row">
+            <div class="quiz-and-control col-sm-8 col-md-8 col-lg-8">
+              <div id="main" class="col-sm-12 col-md-12 col-lg-12 quiz">
+              </div>
+            <!-- So you know below is the control (search for end 1)-->
+                  <div class="col-sm-12 col-md-12 col-lg-12 control">
+                        <!-- <input type="text" id="select_user"></input> -->
+
+                        <?php
+                          $haikyuu = json_decode(file_get_contents("json/score.json"),true);
+                          foreach ($haikyuu as $user => $score) {
+                          echo "<div class='col-xs-6 col-sm-3 col-md-3 col-lg-3'>";
+                          echo "<div id='user' class='director hand-cursor'>";
+                          echo $user;
+                          echo "</div>";
+                          echo "</div>";
+                          }
+                        ?>
+
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-12 load-and-send">
+                          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div id="load" class="load-button hand-cursor">
+                            load
+                            </div>
+                          </div>
+                           <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div id="send" class="send-button hand-cursor">
+                            send
+                            </div>
+                          </div>
+                  </div>
+                                        <!-- end:1 -->
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-lg-4 score">
+              <div class="main-card animated bounce">
+              Scores
+              </div>
+           </div>
+           </div>
+
         </div>
     </body>
 </html>

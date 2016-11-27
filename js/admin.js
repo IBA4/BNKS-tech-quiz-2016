@@ -1,10 +1,7 @@
 var user = "admin";
 var first_send = 1;
+var to_send = "";
 
-$.ajax({
-  url: 'php/init.php',
-  type: 'GET',
-});
 
 
 var getContent = function(param){
@@ -44,8 +41,14 @@ $(document).ready(function() {
   $("#load").click(function() {
     getContent();
   });
+
+  $(".director").click(function() {
+     to_send = $.trim($(this).text());
+     alert($.trim($(this).text()));
+    });
+
   $("#send").click(function() {
-    send($('#select_user').val());
+    send(to_send);
     first_send = 0;
 
   });

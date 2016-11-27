@@ -1,0 +1,17 @@
+#seconds {
+    fill: #15ad15;
+}
+
+#mainCircle {
+    fill: #fff;
+    stroke: #15ad15;
+    stroke-width: 10;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 380;
+}
+
+#ghostCircle {
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 10;
+}
