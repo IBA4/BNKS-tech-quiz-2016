@@ -16,6 +16,7 @@ var getContent = function(param){
     cache : false,
     success : function (data) {
       $('#main').html(data);
+      $(".circle").hide();
     }
   });
 }
@@ -39,7 +40,28 @@ var send = function(param){
 
 $(document).ready(function() {
   $("#load").click(function() {
+    $.ajax({
+      url : 'php/change_show_answer.php',
+      type : 'post',
+      data : {status : ""},
+      async : true,
+      cache : false,
+      success : function() {
+      }
+    });
     getContent();
+  });
+
+  $("#show-correct-answer").click(function(){
+      $.ajax({
+        url : 'php/change_show_answer.php',
+        type : 'post',
+        data : {status : 1},
+        async : true,
+        cache : false,
+        success : function() {
+        }
+      });
   });
 
   $(".director").click(function() {
@@ -48,6 +70,15 @@ $(document).ready(function() {
     });
 
   $("#send").click(function() {
+    $.ajax({
+      url : 'php/change_show_answer.php',
+      type : 'post',
+      data : {status : ""},
+      async : true,
+      cache : false,
+      success : function() {
+      }
+    });
     send(to_send);
     first_send = 0;
 

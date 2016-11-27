@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="assets/animate.css">
 <!--scripts-->
         <script src="assets/jquery/jquery.min.js"></script>
-        <script src="js/engine.js"></script>
         <script src="assets/Bootstrap/js/bootstrap.min.js"></script>
         <script src="js/admin.js"></script>
 <!--end-->
@@ -22,7 +21,7 @@
 <!--       message-->
         <div class="container">
             <div class="row">
-            <div class="quiz-and-control col-sm-8 col-md-8 col-lg-8">
+            <div class="quiz-and-control col-sm-12 col-md-12 col-lg-12">
               <div id="main" class="col-sm-12 col-md-12 col-lg-12 quiz">
               </div>
             <!-- So you know below is the control (search for end 1)-->
@@ -53,14 +52,19 @@
                             </div>
                           </div>
                   </div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                   <div id="show-correct-answer" class="show-correct-answer-button hand-cursor">
+                   Show correct answer
+                   </div>
+                 </div>
                                         <!-- end:1 -->
             </div>
 
-            <div class="col-sm-4 col-md-4 col-lg-4 score">
+            <!-- <div class="col-sm-4 col-md-4 col-lg-4 score">
               <div class="main-card animated bounce">
               Scores
               </div>
-           </div>
+           </div> -->
            </div>
 
         </div>

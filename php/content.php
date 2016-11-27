@@ -54,8 +54,8 @@
                             </circle>
                             <circle cx="50%" cy="50%" r="60" id="mainCircle">
                             </circle>
-                            <text x="44%" y="58%" font-family="Verdana" font-size="35px" fill="black" >
-                                <tspan id="seconds"></tspan>
+                            <text  id="seconds" x="44%" y="58%" font-family="Verdana" font-size="35px" fill="black" >
+                                <!-- <tspan id="seconds"></tspan> -->
                             </text>
                         </g>
                     </svg>

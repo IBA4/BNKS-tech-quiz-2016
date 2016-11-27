@@ -170,6 +170,20 @@ gets the permission to answer.*/
   color: white;
   min-height: 40px;
 }
+.director:hover {
+  background-color: teal;
+  color: white;
+}
+.show-correct-answer-button {
+  background-color: green;
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.show-correct-answer-button:hover {
+  background-color: white ;
+  color: green;
+}
 .load-and-send {
   margin: 10px;
   padding: 2px;
